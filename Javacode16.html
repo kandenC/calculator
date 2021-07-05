@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculator</title>
+</head>
+<body style="text-align: center;">
+	<input type="text" placeholder="Enter a number" id="no1">
+	<input type="text" placeholder="Enter a number" id="no2">
+	<br>
+	<br>
+	<button onclick="first()">+</button>
+	<button onclick="second()">-</button>
+	<button onclick="third()">x</button>
+	<button onclick="fourth()">÷</button>
+	<h1 id="space"></h1>
+<script type="text/javascript">
+
+function first() {
+    var a = parseInt(document.getElementById('no1').value)
+	var b = parseInt(document.getElementById('no2').value)
+	var space = document.getElementById('space')
+	space.innerHTML = a+b
+}
+function second() {
+	var a = parseInt(document.getElementById('no1').value)
+	var b = parseInt(document.getElementById('no2').value)
+	var space = document.getElementById('space')
+	space.innerHTML= a-b
+}
+function third() {
+	var a = parseInt(document.getElementById('no1').value)
+	var b = parseInt(document.getElementById('no2').value)
+	var space = document.getElementById('space')
+	space.innerHTML = a*b
+}
+function fourth() {
+	var a = parseInt(document.getElementById('no1').value)
+	var b = parseInt(document.getElementById('no2').value)
+	var space = document.getElementById('space')
+	space.innerHTML = a/b
+}
+</script>
+</body>
+</html>
